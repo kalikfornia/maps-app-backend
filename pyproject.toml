@@ -12,11 +12,8 @@ license = "BSD-3-Clause license"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "3.12"
-fastapi = {
-  extras = ["standard"], 
-  version = "0.112.0", 
-}
+python = "^3.12"
+fastapi = { extras = ["standard"], version = "0.112.0" }
 
 
 [build-system]
