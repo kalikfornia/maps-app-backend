@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "maps-app-backend"
+version = "0.1.0"
+description = "Backend for maps app"
+authors = [
+  "Vlad <vladko2003@yandex.ru>", 
+  "lovushka <voronov.senya2014@mail.ru>", 
+  "Alexey Grishin <mai.grishin.alexey@gmail.com>", 
+  "K019N <kolannggwp@gmail.com>", 
+]
+license = "BSD-3-Clause license"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = { extras = ["standard"], version = "0.112.0" }
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
