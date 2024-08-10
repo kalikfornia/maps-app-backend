@@ -1,3 +1,15 @@
+[tool.ruff]
+line-length = 79
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.ruff.lint]
+extend-select = ["I001", "W191", "W291"]
+
+[tool.ruff.lint.isort]
+force-single-line = true
+
 [tool.poetry]
 name = "maps-app-backend"
 version = "0.1.0"
