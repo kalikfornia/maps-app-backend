@@ -5,7 +5,11 @@ line-length = 79
 docstring-code-format = true
 
 [tool.ruff.lint]
-extend-select = ["I001", "W191", "W291"]
+extend-select = [
+  "I001", # Unsorted imports
+  "W191", # Tab indentation
+  "W291" # Trailing whitespace
+]
 
 [tool.ruff.lint.isort]
 force-single-line = true
