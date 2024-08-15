@@ -1,3 +1,17 @@
+[tool.pyright]
+# Environment Options
+pythonVersion = "3.12"
+
+# Type Check Diagnostics Settings
+typeCheckingMode = "standard"
+reportPropertyTypeMismatch = "error"
+
+# Type Evaluation Settings
+enableReachabilityAnalysis = true # Report unreachable code
+strictListInference = true # Prohibits list[Any]
+strictDictionaryInference = true # Prohibits dict[Any]
+strictSetInference = true # Prohibits set[Any]
+
 [tool.poetry]
 name = "maps-app-backend"
 version = "0.1.0"
@@ -14,7 +28,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.12"
 fastapi = { extras = ["standard"], version = "0.112.0" }
-
+pyright = "1.1.375"
 
 [build-system]
 requires = ["poetry-core"]
