@@ -4,13 +4,13 @@ pythonVersion = "3.12"
 
 # Type Check Diagnostics Settings
 typeCheckingMode = "standard"
-reportPropertyTypeMismatch = "error"
+reportPropertyTypeMismatch = "error" # Report if get(property) type doesn't match set(property) type
 
 # Type Evaluation Settings
 enableReachabilityAnalysis = true # Report unreachable code
-strictListInference = true # Prohibits list[Any]
-strictDictionaryInference = true # Prohibits dict[Any]
-strictSetInference = true # Prohibits set[Any]
+strictListInference = true # List[T] instead of list[Any]
+strictDictionaryInference = true # List[T] instead of dict[Any]
+strictSetInference = true # List[T] instead of set[Any]
 
 [tool.poetry]
 name = "maps-app-backend"
